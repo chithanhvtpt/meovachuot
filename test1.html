@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class cat {
+        name;
+        hp;
+
+        constructor(a, b) {
+            this.name = a;
+            this.hp = b;
+        }
+
+        trap() {
+            this.hp -= 2;
+        }
+    }
+
+    class mouse {
+        name;
+        hp;
+
+        constructor(a, b) {
+            this.name = a;
+            this.hp = b;
+        }
+
+        punch() {
+            this.hp -= 1;
+        }
+    }
+
+
+    let cat1 = new cat("Tom", 100);
+    let cat2 = new cat("Oogy", 100);
+    cat1.trap();
+    console.log(cat1.hp);
+    console.log(cat2.hp);
+    let mouse1 = new mouse("Jerry", 100);
+    mouse1.punch();
+    console.log(mouse1.hp);
+
+</script>
+</body>
+</html>
